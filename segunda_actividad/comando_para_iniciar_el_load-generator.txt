@@ -1,0 +1,4 @@
+kubectl run -i --tty load-generator --image=busybox --
+/bin/sh -c "while true; do wget -q -O- http://192.168.49.2:31321/; done"
+
+NOTA: debes cambiar la ip del comando a la que aparece en tu navegador.
